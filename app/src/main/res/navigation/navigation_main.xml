@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_main"
+    app:startDestination="@+id/fitStart">
+<!--    <fragment-->
+<!--        android:id="@+id/fragment_printer_interface"-->
+<!--        android:name="com.example.myapplication.PrinterInterfaceFragment"-->
+<!--        tools:layout="@layout/fragment_container">-->
+<!--        <action-->
+<!--            android:id="@+id/to_printer_list"-->
+<!--            app:destination="@id/fragment_printer_list" />-->
+<!--    </fragment>-->
+    <fragment
+        android:id="@+id/fragment_printer_list"
+        android:name="com.example.myapplication.PrinterListFragment"
+        tools:layout="@layout/fragment_printer_list" />
+    <fragment
+        android:id="@+id/fitStart"
+        android:name="com.example.myapplication.PrintFragment"
+        tools:layout="@layout/fragment_print" />
+
+</navigation>
+
+
+
